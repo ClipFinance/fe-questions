@@ -8,7 +8,6 @@ const { data: singleCallData = BigInt(0) } = useReadContract({
   },
 });
 
-
 const { data: multiCallData = [] } = useReadContracts({
   contracts: contractsTemplates,
   query: {
