@@ -1,5 +1,5 @@
-const { data: singleCallData = BigInt(0)} = useReadContract({
-	address,
+const { data: singleCallData = BigInt(0) } = useReadContract({
+  address,
 	abi,
 	functionName: 'balanceOf',
 	args: [address],
@@ -9,7 +9,7 @@ const { data: singleCallData = BigInt(0)} = useReadContract({
 });
 
 
-const { data: multiCallData = []} = useReadContracts({
+const { data: multiCallData = [] } = useReadContracts({
 	contracts: contractsTemplates,
 	query: {
 		enabled: true
